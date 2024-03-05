@@ -11,12 +11,11 @@ realButton.addEventListener("change", function() {
   const file = this.files[0];
 
   if (file) {
-      const reader = new FileReader();
-
-      reader.addEventListener("load", function() {
-        image.setAttribute('src', this.result);
-      });
-      reader.readAsDataURL(file);
+    const reader = new FileReader();
+    reader.addEventListener("load", function() {
+      image.setAttribute('src', this.result);
+    });
+    reader.readAsDataURL(file);
   }
 });
 
@@ -28,7 +27,7 @@ image.addEventListener('load', e => {
 
   for(let i=0; i<imageData2.data.length; i+=4) {
     if (imageData2.data[i] < 128) {
-      document.getElementById('canvas').innerHTML += " ";
+      document.getElementById('canvas').innerHTML += " ";
     }
     else {
       document.getElementById('canvas').innerHTML += ".";
@@ -37,7 +36,6 @@ image.addEventListener('load', e => {
 });
 
 document.getElementById('generate').addEventListener('click', () => {
-  let lines = document.getElementById('lines').value;
-  gen(lines)
+  gen(150)
   document.getElementById('code').innerHTML = output;
 });
