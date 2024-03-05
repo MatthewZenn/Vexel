@@ -151,3 +151,14 @@ body, html {
   image-rendering: pixelated;
   filter: grayscale();
 }
+
+#counter {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  color: white;
+  font-size: 10pt;
+  margin: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+}

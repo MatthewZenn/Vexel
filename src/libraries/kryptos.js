@@ -21,28 +21,28 @@ function gen(length) {
     let number = Math.floor(Math.random() * 11) + 1;
     switch(number) {
       case 1:
-        output += "var "+string+"="+num+";";
+        output += "var"+string+"="+num+";";
         break;
       case 2:
-        output += "const "+string+"="+num+";";
+        output += "const"+string+"="+num+";";
         break;
       case 3:
-        output += "document.querySelector('"+string+"').selectionStyle('"+string2+"');";
+        output += "document.querySelector('"+string+"');";
         break;
       case 4:
-        output += "document.getElementById('"+string+"').innerHTML=="+string2+";";
+        output += "document.getElementById('"+string+"').innerHTML="+string2+";";
         break;
       case 5:
-        output += "var "+string+"=Math.random();";
+        output += "var"+string+"=Math.random();";
         break;
       case 6:
-        output += "document.getElementById('"+string+"').innerHTML=='"+string2+"';";
+        output += "document.getElementById('"+string+"');";
         break;
       case 7:
-        output += "var "+string+"='"+string2+"';";
+        output += "var"+string+"='"+string2+"';";
         break;
       case 8:
-        output += "const "+string+"='"+string2+"';";
+        output += "const"+string+"='"+string2+"';";
         break;
       case 9:
         output += "javascript.alert('"+string2+"');";
